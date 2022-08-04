@@ -1,0 +1,66 @@
+{
+  "pluginAlias": "WonderfulTommyLock",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "username": {
+      "title": "Username",
+      "type": "string",
+      "required": true,
+      "description": "The api username"
+    },
+    "password": {
+      "title": "Password",
+      "type": "string",
+      "required": true,
+      "description": "The api password"
+    },
+    "clientid": {
+      "title": "Client ID",
+      "type": "string",
+      "required": true,
+      "description": "The api client id"
+    },
+    "tokenrefresh": {
+      "title": "Token Refresh",
+      "type": "number",
+      "required": true,
+      "description": "Time in seconds to refresh the token"
+    },
+    "locks": {
+      "type": "array",
+      "items": {
+        "title": "Locks",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "placeholder": "Enter lock name...",
+            "required": true
+             
+          },
+          "deviceid": {
+            "title": "Device ID",
+            "type": "string",
+            "placeholder": "Enter lock device id...",
+            "required": true
+          },
+          "unlockactionid": {
+            "title": "Unlock Action ID",
+            "type": "string",
+            "placeholder": "enter unlock action id...",
+            "required": true
+          },
+          "lockactionid": {
+            "title": "Lock Action ID",
+            "type": "string",
+            "placeholder": "Enter lock action id...",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
+  
